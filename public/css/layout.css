@@ -484,7 +484,20 @@ ul#nav li.current a {
   margin-bottom: 48px;
   color: #95a3a3;
 }
+#map h2 {
+   color: #FFFFFF;
+}
+#map h5 {
+   color: #FFFFFF;
+}
 
+.mapContainer {
+   background:rgba(255, 255, 255, .7);
+   text-align: center;
+   padding-left: 180pt;
+   padding-top: 20pt;
+   padding-bottom: 20pt;
+}
 /* Portfolio Content */
 #portfolio-wrapper .columns {
   margin-bottom: 36px;

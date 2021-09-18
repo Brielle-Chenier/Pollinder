@@ -5,10 +5,14 @@ import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
+import Map from "./Components/Map";
 import Portfolio from "./Components/Portfolio";
 import Contact from "./Components/Contact";
 import Tindercard from "./Components/TinderCard";
 import Resume from "./Components/Resume";
+import DisplayedMap from "./Components/DisplayedMap";
+import firebase from './firebase';
+
 
 class App extends Component {
   constructor(props) {
@@ -39,6 +43,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getResumeData();
+    
   }
 
   render() {
@@ -47,6 +52,8 @@ class App extends Component {
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
         <Tindercard />
+        <Map data={this.state.resumeData.map} />
+        <DisplayedMap iconColor = "00FF00" />
         <Portfolio data={this.state.resumeData.portfolio} />
         {/* <Resume data={this.state.resumeData.resume} /> */}
         <Footer data={this.state.resumeData.main} />

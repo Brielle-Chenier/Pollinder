@@ -3,7 +3,7 @@
     "name":"Pollinder",
     "description":"A Polictical Compass app for young adults. Participate in a swiping game to see where your political ideologies lie, view party views and promises, and see a live map of others results",
     "image":"politcalParties.png",
-    "bio":"The app was built using a React front-end with Flask in the backend and firebase as our database, access out github repository through the link below.",
+    "bio":"The app was built using a React front-end with Flask in the backend and  as our database, access out github repository through the link below.",
     "github":"https://github.com/Brielle-Chenier/Pollinder",
     "project":"https://hackthenorth2021.devpost.com/",
     "address":{
@@ -22,6 +22,7 @@
       }
     ]
   },
+
   "resume":{
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
@@ -82,6 +83,8 @@
         "level":"80%"
       }
     ]
+  "map":{
+    "province": "Ontario"
   },
   "portfolio":{
     "projects": [
