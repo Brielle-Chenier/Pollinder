@@ -50,7 +50,7 @@ class App extends Component {
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
         <Map data={this.state.resumeData.map} />
-        <DisplayedMap />
+        <DisplayedMap iconColor = "00FF00" />
         <Portfolio data={this.state.resumeData.portfolio} />
         <Footer data={this.state.resumeData.main} />
       </div>
