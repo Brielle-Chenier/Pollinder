@@ -2,134 +2,167 @@ import React, { Component, useState, useMemo } from "react";
 import { Fade, Slide } from "react-reveal";
 import TinderCard from "react-tinder-card";
 
+//NDP 1 , LIBERAL 2, CONSERVATIVE 3
 const db = [
   {
     name: "Tweet 1",
-    url: "../img/tweets/1.png",
+    url: "./images/tweets/1.png",
+    party: 2,
   },
   {
     name: "Tweet 2",
-    url: "../img/tweets/2.png",
+    url: "./images/tweets/2.png",
+    party: 2,
   },
   {
     name: "Tweet 3",
-    url: "../img/tweets/3.png",
+    url: "./images/tweets/3.png",
+    party: 2,
   },
   {
     name: "Tweet 4",
-    url: "./images/tweets/4.png",
+    url: "../images/tweets/4.png",
+    party: 2,
   },
   {
     name: "Tweet 5",
-    url: "./images/tweets/5.png",
+    url: "../images/tweets/5.png",
+    party: 2,
   },
   {
     name: "Tweet 6",
-    url: "../img/tweets/6.png",
+    url: "../images/tweets/6.png",
+    party: 2,
   },
   {
     name: "Tweet 7",
-    url: "../img/tweets/7.png",
+    url: "../images/tweets/7.png",
+    party: 2,
   },
   {
     name: "Tweet 8",
-    url: "../img/tweets/8.png",
+    url: "../images/tweets/8.png",
+    party: 2,
   },
   {
     name: "Tweet 9",
-    url: "../img/tweets/9.png",
+    url: "../images/tweets/9.png",
+    party: 2,
   },
   {
     name: "Tweet 10",
-    url: "../img/tweets/10.png",
+    url: "../images/tweets/10.png",
+    party: 2,
   },
   {
     name: "Tweet 11",
-    url: "../img/tweets/11.png",
+    url: "../images/tweets/11.png",
+    party: 2,
   },
   {
     name: "Tweet 12",
-    url: "../img/tweets/12.png",
+    url: "../images/tweets/12.png",
+    party: 3,
   },
   {
     name: "Tweet 13",
-    url: "../img/tweets/13.png",
+    url: "../images/tweets/13.png",
+    party: 3,
   },
   {
     name: "Tweet 14",
-    url: "../img/tweets/14.png",
+    url: "../images/tweets/14.png",
+    party: 3,
   },
   {
     name: "Tweet 15",
-    url: "../img/tweets/15.png",
+    url: "../images/tweets/15.png",
+    party: 3,
   },
   {
     name: "Tweet 16",
-    url: "../img/tweets/16.png",
+    url: "../images/tweets/16.png",
+    party: 3,
   },
   {
     name: "Tweet 17",
-    url: "../img/tweets/17.png",
+    url: "../images/tweets/17.png",
+    party: 3,
   },
   {
     name: "Tweet 18",
-    url: "../img/tweets/18.png",
+    url: "../images/tweets/18.png",
+    party: 3,
   },
   {
     name: "Tweet 19",
-    url: "../img/tweets/19.png",
+    url: "../images/tweets/19.png",
+    party: 3,
   },
   {
     name: "Tweet 20",
-    url: "../img/tweets/20.png",
+    url: "../images/tweets/20.png",
+    party: 3,
   },
   {
     name: "Tweet 21",
-    url: "../img/tweets/21.png",
+    url: "../images/tweets/21.png",
+    party: 3,
   },
   {
     name: "Tweet 22",
-    url: "../img/tweets/22.png",
+    url: "../images/tweets/22.png",
+    party: 1,
+  },
+  {
+    name: "Tweet 22",
+    url: "../images/tweets/22.png",
+    party: 1,
   },
   {
     name: "Tweet 23",
-    url: "../img/tweets/23.png",
+    url: "../images/tweets/23.png",
+    party: 1,
   },
   {
     name: "Tweet 24",
-    url: "../img/tweets/24.png",
+    url: "../images/tweets/24.png",
+    party: 1,
   },
   {
     name: "Tweet 25",
-    url: "../img/tweets/25.png",
+    url: "../images/tweets/25.png",
+    party: 1,
   },
   {
     name: "Tweet 26",
-    url: "../img/tweets/26.png",
+    url: "../images/tweets/26.png",
+    party: 1,
   },
   {
     name: "Tweet 27",
-    url: "../img/tweets/27.png",
+    url: "../images/tweets/27.png",
+    party: 1,
   },
   {
     name: "Tweet 28",
-    url: "../img/tweets/28.png",
+    url: "../images/tweets/28.png",
+    party: 1,
   },
   {
     name: "Tweet 29",
-    url: "../img/tweets/29.png",
+    url: "../images/tweets/29.png",
+    party: 1,
   },
   {
     name: "Tweet 30",
-    url: "../img/tweets/30.png",
+    url: "../images/tweets/30.png",
+    party: 1,
   },
   {
     name: "Tweet 31",
-    url: "../img/tweets/31.png",
-  },
-  {
-    name: "Tweet 32",
-    url: "/images/tweets/32.png",
+    url: "../images/tweets/31.png",
+    party: 1,
   },
 ];
 
