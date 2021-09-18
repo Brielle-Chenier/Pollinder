@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
+import Tindercard from "./TinderCard";
 
 class Resume extends Component {
   getRandomColor() {

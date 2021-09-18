@@ -7,9 +7,11 @@ import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Map from "./Components/Map";
 import Portfolio from "./Components/Portfolio";
+import Contact from "./Components/Contact";
+import Tindercard from "./Components/TinderCard";
+import Resume from "./Components/Resume";
 import DisplayedMap from "./Components/DisplayedMap";
 import firebase from './firebase';
-
 
 
 class App extends Component {
@@ -49,9 +51,11 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
+        <Tindercard />
         <Map data={this.state.resumeData.map} />
         <DisplayedMap iconColor = "00FF00" />
         <Portfolio data={this.state.resumeData.portfolio} />
+        {/* <Resume data={this.state.resumeData.resume} /> */}
         <Footer data={this.state.resumeData.main} />
       </div>
     );
