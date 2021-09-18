@@ -4,8 +4,8 @@
     "description":"A Polictical Compass app for young adults. Participate in a swiping game to see where your political ideologies lie, view party views and promises, and see a live map of others results",
     "image":"politcalParties.png",
     "bio":"The app was built using a React front-end with Flask in the backend and firebase as our database, access out github repository through the link below.",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "github":"https://github.com/Brielle-Chenier/Pollinder",
+    "project":"https://hackthenorth2021.devpost.com/",
     "address":{
       "street":"161 University Ave",
       "city":"Waterloo",
@@ -15,26 +15,6 @@
     "website": "http://www.timbakerdev.com",
     "resumedownload":"http://timbakerdev.com",
     "social":[
-      {
-        "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
-        "className":"fa fa-linkedin"
-      },
-      {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
-      },
       {
         "name":"github",
         "url":"https://github.com/nordicgiant2/react-nice-resume",
@@ -47,26 +27,26 @@
       {
         "title":"Canada's 2021 Election Guide, last minute ",
         "category":"Global News",
-        "image":"04.jpg",
+        "image":"img1.jpeg",
         "url":"https://globalnews.ca/news/8188343/2021-canada-election-cheat-sheet/"
       },
       {
         "title":"Here's how the federal election could change Canada's immigration system",
         "category":"The Star",
-        "image":"05.jpg",
+        "image":"img2.jpeg",
         "url":"https://www.thestar.com/news/canada/2021/09/17/heres-how-the-federal-election-could-change-canadas-immigration-system.html"
       },
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"FAQs - Registration",
+        "category":"Elections Canada",
+        "image":"img3.jpeg",
+        "url":"https://www.elections.ca/content2.aspx?section=faq&document=faqreg&lang=e"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"01.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Compare where the parties stand on issues",
+        "category":"The Globe and Mail",
+        "image":"img4.webp",
+        "url":"https://www.theglobeandmail.com/politics/article-canada-federal-election-20210-party-plaform-guide/"
       }
     ]
   }
