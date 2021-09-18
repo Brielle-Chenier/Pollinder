@@ -8,9 +8,8 @@ import About from "./Components/About";
 import Map from "./Components/Map";
 import Portfolio from "./Components/Portfolio";
 import DisplayedMap from "./Components/DisplayedMap";
-import firebase from './firebase';
-
-
+import firebase from "./firebase";
+import Tindercard from "./Components/TinderCard";
 
 class App extends Component {
   constructor(props) {
@@ -41,7 +40,6 @@ class App extends Component {
 
   componentDidMount() {
     this.getResumeData();
-    
   }
 
   render() {
@@ -49,8 +47,9 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
+        <Tindercard />
         <Map data={this.state.resumeData.map} />
-        <DisplayedMap iconColor = "00FF00" />
+        <DisplayedMap iconColor="00FF00" />
         <Portfolio data={this.state.resumeData.portfolio} />
         <Footer data={this.state.resumeData.main} />
       </div>
