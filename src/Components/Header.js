@@ -15,7 +15,7 @@ class Header extends Component {
       <header id="home">
         <ParticlesBg type="circle" bg={true} />
 
-        <nav id="nav-wrap">
+        {/* <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
           </a>
@@ -54,7 +54,7 @@ class Header extends Component {
               </a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <div className="row banner">
           <div className="banner-text">

@@ -1,6 +1,9 @@
 import React, { Component, useState, useMemo } from "react";
 import { Fade, Slide } from "react-reveal";
 import TinderCard from "react-tinder-card";
+import {getDatabase,ref,set,get,child,update,query,orderByChild} from "firebase/database";
+
+const dbRef = ref(getDatabase());
 
 //NDP 1 , LIBERAL 2, CONSERVATIVE 3
 const db = [
@@ -285,16 +288,25 @@ function Tindercard(data) {
 
   const sendColour = () => {
     console.log("data", data);
-    if (32 <= userScore <= 53) {
+    var colour;
+    const dbl = counter;
+    const diff = counter*2/3;
+    if (dbl <= userScore <= (dbl + diff)) {
       //NDP is result
-      const colour = "#FFAC1C";
-    } else if (54 <= userScore <= 75) {
+      alert ("Your views aligned most with the NDP");
+      colour = "FFAC1C";
+
+    } else if ((dbl + diff) < userScore <= dbl + 2*diff) {
       //LIBERAL
-      const colour = "#F12211";
+      alert ("Your views aligned most with the Liberal Party");
+      colour = "F12211";
     } else {
       //CONSERVATIVE
-      const colour = "#152FF2";
+      alert ("Your views aligned most with the Conservative Party");
+      colour = "152FF2";
     }
+    update(child(dbRef,'tempColor'),{val:colour}); 
+    
     onReplayPressed();
   };
 
@@ -339,7 +351,7 @@ function Tindercard(data) {
                     }}
                     className="card"
                   >
-                    <h5>{character.name}</h5>
+                    {/* <h5>{character.name}</h5> */}
                     <img src={character.url} />
                     <br></br>
                   </div>
@@ -372,7 +384,7 @@ function Tindercard(data) {
           </h4>
         )}
       </div>
-      )
+      
     </section>
   );
 }
