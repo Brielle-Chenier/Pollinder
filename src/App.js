@@ -54,11 +54,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header data={this.state.resumeData.main} />
-        <About data={this.state.resumeData.main} />
+        {/* <About data={this.state.resumeData.main} /> */}
         <Tindercard />
         {/* <Map data={this.state.resumeData.map} /> */}
         <DisplayedMap iconColor = "00FF00" />
-        <Map data={this.state.resumeData.map} />
+        {/* <Map data={this.state.resumeData.map} /> */}
 
         <Portfolio data={this.state.resumeData.portfolio} />
         <Footer data={this.state.resumeData.main} />
