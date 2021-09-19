@@ -57,7 +57,7 @@ class App extends Component {
         {/* <About data={this.state.resumeData.main} /> */}
         <Tindercard />
         {/* <Map data={this.state.resumeData.map} /> */}
-        <DisplayedMap iconColor = "00FF00" />
+        <DisplayedMap iconColor = "808080" />
         {/* <Map data={this.state.resumeData.map} /> */}
 
         <Portfolio data={this.state.resumeData.portfolio} />
