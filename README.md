@@ -1,29 +1,20 @@
-# React Nice Resume :page_with_curl:
+Inspiration
+We wanted to make voting and getting informed on political topics easier for young adults. This is why we combined some of the most popular apps, Twitter and Tinder, to make the app more appealing. Another cool thing is the app allows people from all over the world to participate, whether this means getting tweets for their area or seeing how another country would've voted in the Canadian election.
 
-### [LIVE DEMO](https://nordicgiant2.github.io/react-nice-resume-page/index.html)
+What it does
+In the app you will be presented with anonymous quotes from different political parties, you can swipe right on them to agree and left to disagree. From the results of your swiping, we calculate a score and then display which party your ideals align with most. After this, you can choose to add your result to our live map where you can see the results of other people who have taken the test, allowing you to see trends in data. Lastly, the app provides links to current news articles allowing users to stay informed.
 
-![img](https://github.com/nordicgiant2/react-nice-resume/blob/master/public/images/img.jpg?raw=true)
+How we built it
+We used React for our front-end and special npm packages to help with the tinder cards. For the map, we used Google Maps API in tandem with Firebase to store our data.
 
-# About [`particles-bg`](https://github.com/lindelof/particles-bg) Library
-#### This project uses the react particle background component library [https://github.com/lindelof/particles-bg](https://github.com/lindelof/particles-bg). It's very simple. Anyone can be a Musketeer with it.
+Challenges we ran into
+We initially had trouble trying to connect the app to Flask, but then found an alternate implementation to save on time. We also had trouble sending the live data from the user selections to Firebase which allows the map to update in real-time with the database information.
 
-![img](https://github.com/lindelof/particles-bg/raw/master/image/03.jpg?raw=true)
+Accomplishments that we're proud of
+We are super proud of the idea we came up with, and our ability to complete the site in time. We are also glad we had the time to create the map and use data visualization to display the results.
 
-# Description
-This project forks from [https://github.com/tbakerx/react-resume-template](https://github.com/tbakerx/react-resume-template), I made some modifications and adjustments, thanks to the [author](https://github.com/tbakerx).
+What we learned
+We learned a lot more about React, how to use Google Maps API, and how to access a lot of data on Firebase. We also learned how to create a nice-looking website.
 
-![img](https://github.com/nordicgiant2/react-nice-resume/blob/master/public/images/img2.jpg?raw=true)
-
-# Run Project
-### 1. Clone the project
-
-### 2. Run the project
-```shell
-npm i
-npm start
-```
-
-### 3. Build
-```shell
-npm run build
-```
+What's next for Pollinder
+We would hope to be able to pull tweets from both the federal representatives and use geodata to pll tweet from users' local representatives to make the data more targeted. Due to the time limit, we weren't able to get tweets from the Twitter API but in the future, this would also be nice as we could then implement ways to filter tweets by content and stay up to date with current events.
