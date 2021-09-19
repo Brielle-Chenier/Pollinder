@@ -377,6 +377,7 @@ function Tindercard(data) {
             <h2 key={lastDirection} className="infoText">
               You swiped {lastDirection}
             </h2>
+            <div><br></br></div>
             <div>
               <button onClick={sendColour}>Submit Results</button>
               <button onClick={onReplayPressed}>Play Again</button>
@@ -384,7 +385,7 @@ function Tindercard(data) {
           </div>
         ) : (
           <h4 className="infoText">
-            Swipe a card or press a button to get started!
+            Swipe a card to get started!
           </h4>
         )}
       </div>

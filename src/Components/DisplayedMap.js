@@ -118,7 +118,7 @@ export default function MarkedMap(iconcolor, zipcode) {
   return <div class = "mapContainer">
     
     <div class="refreshButton">
-    <h1 class="resume">SEE WHAT CANADA THINKS</h1>
+    <h1 class="mapTitle">SEE WHAT CANADA THINKS</h1>
     <button variant="primary" onClick={loadPrevLoc} style={{float: 'right'}}>Refresh Map</button>
 
     </div>

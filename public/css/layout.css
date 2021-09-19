@@ -242,9 +242,10 @@ ul#nav li.current a { color: #fe6928; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
-   font: 24px/26px 'opensans-bold', sans-serif;
+   font: 35px/26px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
+   padding-bottom: 10px;
 }
 #resume h1 span {
    border-bottom: 3px solid #0762f9;
@@ -256,6 +257,23 @@ ul#nav li.current a { color: #fe6928; }
 
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
+
+.mapTitle {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   overflow: hidden;
+   text-align: center;
+   font: 35px/26px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+
+.mapTitle h1 span {
+   border-bottom: 3px solid #0762f9;
+   padding-bottom: 6px;
+
+}
 
 .education, .work {
    margin-bottom: 48px;
@@ -441,8 +459,8 @@ ul#nav li.current a { color: #fe6928; }
 }
 
 .refreshButton{
-   padding-right: 175pt;
-   padding-bottom: 40pt;
+   padding-right: 195pt;
+   padding-bottom: 30pt;
 }
 
 .searchBox {
