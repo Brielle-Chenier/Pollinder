@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Zmage from "react-zmage";
 import Fade from "react-reveal";
 //import firebase from 'firebase';
 import app from '../firebase.js';
