@@ -17,10 +17,16 @@ class App extends Component {
     this.state = {
       foo: "bar",
       resumeData: {},
+      colour: "",
     };
-
+    this.setColour = this.setColour.bind(this);
     ReactGA.initialize("UA-110570651-1");
     ReactGA.pageview(window.location.pathname);
+  }
+
+  setColour(colour) {
+    this.setState({ colour: colour });
+    console.log("colour", colour);
   }
 
   getResumeData() {
@@ -47,9 +53,9 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
-        <Tindercard />
+        <Tindercard data={this.setColour} />
         <Map data={this.state.resumeData.map} />
-        <DisplayedMap iconColor="00FF00" />
+        <DisplayedMap iconColor={this.state.colour} />
         <Portfolio data={this.state.resumeData.portfolio} />
         <Footer data={this.state.resumeData.main} />
       </div>
