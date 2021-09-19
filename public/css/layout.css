@@ -433,10 +433,25 @@ ul#nav li.current a { color: #fe6928; }
 
 .mapContainer {
    background:rgba(255, 255, 255, .7);
-   text-align: center;
+   /*text-align: center;*/
    padding-left: 180pt;
    padding-top: 20pt;
    padding-bottom: 20pt;
+}
+
+.refreshButton{
+   padding-right: 175pt;
+   padding-bottom: 40pt;
+}
+
+.searchBox {
+    /*position: absolute;*/
+   top: 1rem;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100%;
+   max-width: 400px;
+   z-index:10;
 }
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
