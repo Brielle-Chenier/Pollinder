@@ -251,6 +251,8 @@ function Tindercard(data) {
   );
 
   const swiped = (direction, nameToDelete, party) => {
+    setCounter(counter+1);
+    console.log ("counter: " + counter);
     console.log("removing: " + nameToDelete);
     //setIndex(currindex + 1);
     setLastDirection(direction);
@@ -258,6 +260,7 @@ function Tindercard(data) {
     if (direction == "right") {
       setUserScore(userScore + party);
     }
+    console.log("user score" + userScore);
   };
 
   const outOfFrame = (name) => {
@@ -287,16 +290,17 @@ function Tindercard(data) {
   //   };
 
   const sendColour = () => {
-    console.log("data", data);
+    
     var colour;
     const dbl = counter;
     const diff = counter*2/3;
-    if (dbl <= userScore <= (dbl + diff)) {
+    console.log("data: ", data, " counter: ", counter, " userScore: ", userScore, "diff: ", diff);
+    if (0 <= userScore && userScore <= (diff)) {
       //NDP is result
       alert ("Your views aligned most with the NDP");
       colour = "FFAC1C";
 
-    } else if ((dbl + diff) < userScore <= dbl + 2*diff) {
+    } else if ((diff) < userScore && userScore <= (2*diff)) {
       //LIBERAL
       alert ("Your views aligned most with the Liberal Party");
       colour = "F12211";

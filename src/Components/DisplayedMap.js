@@ -52,13 +52,14 @@ export default function MarkedMap(iconcolor, zipcode) {
     get(child(dbRef, `tempColor/val`)).then((snapshot) => {
       if (snapshot.exists()) {
         iconColor = snapshot.val();
-        console.log("ICON" + iconColor);
       } else {
         console.log("No data available");
       }
     }).catch((error) => {
       console.error(error);
     });
+    console.log("Icon: ", iconColor)
+
     setMarkers(current => [
         ...current, {
         lat: event.latLng.lat(),
@@ -109,6 +110,8 @@ export default function MarkedMap(iconcolor, zipcode) {
       }).catch((error) => {
         console.error(error);
       });
+
+      mapRef.current.setZoom(3);
   }
 
   
