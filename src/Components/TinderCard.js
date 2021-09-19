@@ -25,44 +25,44 @@ const db = [
     party: 2,
   },
   {
-    name: "Tweet 5",
-    url: "../images/tweets/5.png",
-    party: 2,
-  },
-  {
-    name: "Tweet 6",
-    url: "../images/tweets/6.png",
-    party: 2,
-  },
-  {
-    name: "Tweet 7",
-    url: "../images/tweets/7.png",
-    party: 2,
-  },
-  {
-    name: "Tweet 8",
-    url: "../images/tweets/8.png",
-    party: 2,
-  },
-  {
-    name: "Tweet 9",
-    url: "../images/tweets/9.png",
-    party: 2,
-  },
-  {
-    name: "Tweet 10",
-    url: "../images/tweets/10.png",
-    party: 2,
-  },
-  {
-    name: "Tweet 11",
-    url: "../images/tweets/11.png",
-    party: 2,
-  },
-  {
     name: "Tweet 12",
     url: "../images/tweets/12.png",
     party: 3,
+  },
+  {
+    name: "Tweet 13",
+    url: "../images/tweets/13.png",
+    party: 3,
+  },
+  {
+    name: "Tweet 14",
+    url: "../images/tweets/14.png",
+    party: 3,
+  },
+  {
+    name: "Tweet 15",
+    url: "../images/tweets/15.png",
+    party: 3,
+  },
+  {
+    name: "Tweet 27",
+    url: "../images/tweets/27.png",
+    party: 1,
+  },
+  {
+    name: "Tweet 28",
+    url: "../images/tweets/28.png",
+    party: 1,
+  },
+  {
+    name: "Tweet 29",
+    url: "../images/tweets/29.png",
+    party: 1,
+  },
+  {
+    name: "Tweet 30",
+    url: "../images/tweets/30.png",
+    party: 1,
   },
 ];
 // const db = [
